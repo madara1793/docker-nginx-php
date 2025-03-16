@@ -15,6 +15,7 @@ docker run -v /path/to/local/web/files:/var/www:rw -p 80:80 -d webapp /sbin/my_i
 
 This will bind local port 80 to the container's port 80. This means you should be able to go to "localhost" in your browser (or the IP address of your virtual machine oh which Docker is running) and see your web application files.
 
+
 * `docker run` - starts a new docker container
 * `-v /path/to/local/web/files:/var/www:rw` - Bind a local directory to a directory in the container for file sharing. `rw` makes it "read-write", so the container can write to the directory.
 * `-p 80:80` - Binds the local port 80 to the container's port 80, so local web requests are handled by the docker.
