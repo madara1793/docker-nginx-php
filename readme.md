@@ -4,7 +4,6 @@ This is the basis for LEMP stack (minus MySQL). This is based on [phusion/baseim
 
 You can build this yourself after cloning the project (assuming you have Docker installed).
 
-
 ```bash
 cd /path/to/repo/docker-nginx-php
 docker build -t webapp . # Build a Docker image named "webapp" from this location "."
